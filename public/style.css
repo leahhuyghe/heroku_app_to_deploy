@@ -1,0 +1,27 @@
+
+
+.bordered-table {
+  width: 80%
+  position: center;
+}
+
+.bordered-table td {
+border: 1px solid;
+}
+
+
+.red {
+  background-color: #f00;
+}
+
+.yellow {
+  background-color: #ff0;
+}
+
+.blue {
+  background-color: #00f;
+}
+
+.green {
+  background-color: #0f0;
+}

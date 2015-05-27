@@ -1,0 +1,27 @@
+<h1>All Contacts(<%= @contacts.size %>)</h1>
+<table class="table">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+  </tr>
+
+<%# looping through the contacts to display a table row for each %>
+
+<% @contacts.each do |contact| %>
+
+  <tr>
+    <td><%= contact.first_name %></td>
+    <td><%= contact.last_name %></td>
+    <td><%= contact.email %></td>
+    <td><button type="button"> <a href="contact/<%= contact.id %>">View</a></button></td>
+    <td><button type="button"><a href="#">Delete</a></button></td>
+
+    <form action="/contact/ <%= contact.id %>" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Delete">
+    </form>
+  </tr>
+
+  <% end %>
+</table>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My first awesome Sinatra app</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/">About Us</a>
+      <a href="/">Contact</a>
+    </nav>
+
+  <%# All the code that is inside of the ERB file that will use this layout will go in place of this yield below %>
+  <%= yield %>
+  </div>
+  <form action ="/contact" method ="post">
+
+  </form>
+
+</body>
+</html>

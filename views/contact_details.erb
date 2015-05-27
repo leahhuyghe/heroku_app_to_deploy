@@ -1,0 +1,11 @@
+<h1><%= @contact.first_name  %> <%= @contact.last_name %></h1>
+<p>Email: <%= @contact.email %></p>
+<p>Phone number: <%= @contact.phone_number %></p>
+<p>Message: <%=@contact.message %></p>
+
+<form action="/note/<%= @contact.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <textarea name="note"></textarea>
+  <br>
+  <input type="submit" value="Save Note">
+</form>
